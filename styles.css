@@ -22,7 +22,7 @@ body{
     background-image: url(img/star-background.png);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     height: 100vh;
     background-size: cover;
@@ -38,18 +38,18 @@ footer{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 50px;
 }
 
 .logo{
-    width: 300px;
+    max-width: 30vw;
     margin-top: 50px;
     margin-bottom: 25px;
 }
 
 .footer-logo{
-    width: 300px;
+    max-width: 20vw;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 2px;
@@ -57,7 +57,7 @@ footer{
 
 .link-button{
     background-color: var(--black-opacity);
-    width: 500px;
+    min-width: 30vw;
     height: 50px;
     border-style: solid;
     border-width: 2px;
@@ -76,8 +76,15 @@ footer{
     color: var(--black);
 }
 
+.header-text{
+    min-width: 100px;
+    max-width: 1000vw;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 .title{
-    font-size: 75px;
+    font-size: 40px;
     color: var(--light-teal);
     font-family: Georgia, 'Times New Roman', Times, serif;
     flex-shrink: 0;
