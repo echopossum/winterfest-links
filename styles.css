@@ -1,0 +1,83 @@
+:root{
+    --black:#414042;
+    --black-opacity:rgba(65,64,66,0.5);
+    --gray:#939598;
+    --white:#e6e7e8;
+    --dark-red:#560e18;
+    --med-red:#882934;
+    --light-red:#962e3b;
+    --dark-teal:#529dba;
+    --med-teal:#a1c8db;
+    --light-teal:#e9f7fe;
+    --dark-blue:#002652;
+    --med-blue:#00467f;
+    --light-blue:#005b9e;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(img/star-background.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+footer{
+    align-self: flex-start;
+    flex-shrink: 1;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
+
+.logo{
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.footer-logo{
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 2px;
+}
+
+.link-button{
+    background-color: var(--black-opacity);
+    width: 500px;
+    height: 50px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--white);
+    border-radius: 10px;
+    font-size:larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.link-button:hover{
+    background-color: var(--med-teal);
+    color: var(--black);
+}
+
+.title{
+    font-size: 75px;
+    color: var(--light-teal);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    flex-shrink: 0;
+    margin-bottom: 10px;
+}
